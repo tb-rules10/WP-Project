@@ -1,0 +1,65 @@
+<%- include('partials/navbar-home')%>
+
+
+<div class="container scroll-top">
+    <div class="panel" style="background-image: url('images/apex.png')"><a href="https://google.com"></a></div>
+    <div class="panel" style="background-image: url('images/pubg.png')"><a href="https://google.com"></a></div>
+    <div class="panel" style="background-image: url('images/valorant.png')"><a href="https://google.com"></a></div>
+</div>
+
+<%- include('home/hotnews')%>
+
+<%- include('home/watch-live')%>
+
+
+<%- include('home/players')%>
+
+
+
+
+<%- include('home/highlights')%>
+
+<%- include('home/top5')%>
+
+<%- include('home/tweets')%>
+
+
+
+
+
+
+<div class="tweets-container">
+     
+</div>
+
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+    <h1>ignore</h1>
+        
+        <script>
+            const panels = document.querySelectorAll('.panel')
+            panels.forEach(panel => {
+                panel.addEventListener('mouseover', () => {
+                    removeActiveClasses()
+                    panel.classList.add('active')
+                })
+                panel.addEventListener('mouseout', () => {
+                    removeActiveClasses()
+                })
+            })
+            function removeActiveClasses() {
+                panels.forEach(panel => {
+                    panel.classList.remove('active')
+                })
+            }
+        </script>
+        </body>
+
+
+<%- include('partials/footer')%>
